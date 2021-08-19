@@ -155,8 +155,8 @@ amplify configure
 ```sh
 amplify init
 # Note: It is recommended to run this command from the root of your app directory
-# ? Enter a name for the project kiojupplacesreserver
-# ? Enter a name for the environment kiojuplrev
+# ? Enter a name for the project kioslvideohistoryboa
+# ? Enter a name for the environment kiopcvhbev
 # ? Choose your default editor: Visual Studio Code
 # ? Choose the type of app that you're building javascript
 # Please tell us about your project
@@ -171,27 +171,27 @@ amplify init
 # https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
 # ? Do you want to use an AWS profile? Yes
-# ? Please choose the profile you want to use jupiter-electronics
-# Adding backend environment kiojuplrev to AWS Amplify Console app: d12mq8x0d6vvbw
-# ⠴ Initializing project in the cloud...
-
-# CREATE_IN_PROGRESS UnauthRole                                    AWS::IAM::Role             Fri Aug 06 2021 09:40:40 GMT-0500 (Colombia Standard Time) Resource creation Initiated
-# CREATE_IN_PROGRESS AuthRole                                      AWS::IAM::Role             Fri Aug 06 2021 09:40:40 GMT-0500 (Colombia Standard Time) Resource creation Initiated
-# CREATE_IN_PROGRESS DeploymentBucket                              AWS::S3::Bucket            Fri Aug 06 2021 09:40:40 GMT-0500 (Colombia Standard Time)                            
-# CREATE_IN_PROGRESS AuthRole                                      AWS::IAM::Role             Fri Aug 06 2021 09:40:39 GMT-0500 (Colombia Standard Time)                            
-# CREATE_IN_PROGRESS UnauthRole                                    AWS::IAM::Role             Fri Aug 06 2021 09:40:39 GMT-0500 (Colombia Standard Time)                            
-# CREATE_IN_PROGRESS amplify-kiojupplacesreserver-kiojuplrev-94031 AWS::CloudFormation::Stack Fri Aug 06 2021 09:40:35 GMT-0500 (Colombia Standard Time) User Initiated             
-# ⠙ Initializing project in the cloud...
-
-# CREATE_IN_PROGRESS DeploymentBucket AWS::S3::Bucket Fri Aug 06 2021 09:40:40 GMT-0500 (Colombia Standard Time) Resource creation Initiated
-# ⠴ Initializing project in the cloud...
-
-# CREATE_COMPLETE UnauthRole AWS::IAM::Role Fri Aug 06 2021 09:40:53 GMT-0500 (Colombia Standard Time) 
-# CREATE_COMPLETE AuthRole   AWS::IAM::Role Fri Aug 06 2021 09:40:53 GMT-0500 (Colombia Standard Time) 
+# ? Please choose the profile you want to use kio-pork-colombia
+# Adding backend environment kiopcvhbev to AWS Amplify Console app: d2rba890rx31oh
 # ⠦ Initializing project in the cloud...
 
-# CREATE_COMPLETE amplify-kiojupplacesreserver-kiojuplrev-94031 AWS::CloudFormation::Stack Fri Aug 06 2021 09:41:04 GMT-0500 (Colombia Standard Time) 
-# CREATE_COMPLETE DeploymentBucket                              AWS::S3::Bucket            Fri Aug 06 2021 09:41:01 GMT-0500 (Colombia Standard Time) 
+# CREATE_IN_PROGRESS UnauthRole                                     AWS::IAM::Role             Wed Aug 18 2021 20:19:46 GMT-0500 (Colombia Standard Time) Resource creation Initiated
+# CREATE_IN_PROGRESS DeploymentBucket                               AWS::S3::Bucket            Wed Aug 18 2021 20:19:46 GMT-0500 (Colombia Standard Time) Resource creation Initiated
+# CREATE_IN_PROGRESS AuthRole                                       AWS::IAM::Role             Wed Aug 18 2021 20:19:45 GMT-0500 (Colombia Standard Time) Resource creation Initiated
+# CREATE_IN_PROGRESS UnauthRole                                     AWS::IAM::Role             Wed Aug 18 2021 20:19:45 GMT-0500 (Colombia Standard Time)                            
+# CREATE_IN_PROGRESS DeploymentBucket                               AWS::S3::Bucket            Wed Aug 18 2021 20:19:45 GMT-0500 (Colombia Standard Time)                            
+# CREATE_IN_PROGRESS AuthRole                                       AWS::IAM::Role             Wed Aug 18 2021 20:19:45 GMT-0500 (Colombia Standard Time)                            
+# CREATE_IN_PROGRESS amplify-kioslvideohistoryboa-kiopcvhbev-201938 AWS::CloudFormation::Stack Wed Aug 18 2021 20:19:41 GMT-0500 (Colombia Standard Time) User Initiated             
+# ⠴ Initializing project in the cloud...
+
+# CREATE_COMPLETE UnauthRole AWS::IAM::Role Wed Aug 18 2021 20:20:00 GMT-0500 (Colombia Standard Time) 
+# CREATE_COMPLETE AuthRole   AWS::IAM::Role Wed Aug 18 2021 20:19:59 GMT-0500 (Colombia Standard Time) 
+# ⠋ Initializing project in the cloud...
+
+# CREATE_COMPLETE DeploymentBucket AWS::S3::Bucket Wed Aug 18 2021 20:20:06 GMT-0500 (Colombia Standard Time) 
+# ⠴ Initializing project in the cloud...
+
+# CREATE_COMPLETE amplify-kioslvideohistoryboa-kiopcvhbev-201938 AWS::CloudFormation::Stack Wed Aug 18 2021 20:20:09 GMT-0500 (Colombia Standard Time) 
 # ✔ Successfully created initial AWS cloud resources for deployments.
 # ✔ Initialized provider successfully.
 # Initialized your environment successfully.
@@ -212,17 +212,18 @@ amplify init
 
 # Codecommit
 
-[Create repo](https://docs.aws.amazon.com/cli/latest/reference/codecommit/create-repository.html)
+- [Create repo](https://docs.aws.amazon.com/cli/latest/reference/codecommit/create-repository.html)
+- 
 ```sh
 nano ~/.aws/credentials
 export PATH=~/Library/Python/3.8/bin:$PATH
 # source ~/.bash_profile
 # test
-aws s3 ls --profile jupiter-electronics
-export AWS_PROFILE=jupiter-electronics
+aws s3 ls --profile kio-pork-colombia
+export AWS_PROFILE=kio-pork-colombia
 
 # aws codecommit create-repository --repository-name MyDemoRepo --repository-description "My demonstration repository" --tags Team=Saanvi
-aws codecommit create-repository --repository-name kio-jup-places-reserve-rjs-app --repository-description "Building places reserve" --tags Team=kio --region us-east-1 
+aws codecommit create-repository --repository-name kio-sl-video-history-board-rjs-app --repository-description "Pork Colombia Video History Board" --tags Team=kio --region us-east-1 
 
 ```
 
@@ -230,15 +231,15 @@ aws codecommit create-repository --repository-name kio-jup-places-reserve-rjs-ap
 ```json
 {
     "repositoryMetadata": {
-        "accountId": "953845147077",
-        "repositoryId": "c6ceab50-6edb-46fd-a0cd-747a01975578",
-        "repositoryName": "kio-jup-places-reserve-rjs-app",
-        "repositoryDescription": "Building places reserve",
-        "lastModifiedDate": "2021-08-06T10:03:05.069000-05:00",
-        "creationDate": "2021-08-06T10:03:05.069000-05:00",
-        "cloneUrlHttp": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-jup-places-reserve-rjs-app",
-        "cloneUrlSsh": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-jup-places-reserve-rjs-app",
-        "Arn": "arn:aws:codecommit:us-east-1:953845147077:kio-jup-places-reserve-rjs-app"
+        "accountId": "449195197711",
+        "repositoryId": "78482a05-0973-4896-a814-924c32f7d38d",
+        "repositoryName": "kio-sl-video-history-board-rjs-app",
+        "repositoryDescription": "Pork Colombia Video History Board",
+        "lastModifiedDate": "2021-08-18T20:25:06.501000-05:00",
+        "creationDate": "2021-08-18T20:25:06.501000-05:00",
+        "cloneUrlHttp": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-sl-video-history-board-rjs-app",
+        "cloneUrlSsh": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-sl-video-history-board-rjs-app",
+        "Arn": "arn:aws:codecommit:us-east-1:449195197711:kio-sl-video-history-board-rjs-app"
     }
 }
 ```
@@ -248,9 +249,9 @@ aws codecommit create-repository --repository-name kio-jup-places-reserve-rjs-ap
 
 ```sh
 ssh-keygen
-/Users/robin8a/.ssh/jupiter_codecommit_rsa
+/Users/robin8a/.ssh/kio_pork_colombia_codecommit_rsa
 
-cat ~/.ssh/jupiter_codecommit_rsa.pub
+cat ~/.ssh/kio_pork_colombia_codecommit_rsa.pub
 
 ```
 
@@ -263,35 +264,21 @@ nano config
 # Add
 
 # CodeCommit hosts
-# Host jupiter_codecommit_rsa
-#    HostName git-codecommit.us-east-1.amazonaws.com
-#    User AKIAWIFIFHURQXRLUPPD
-#    IdentityFile ~/.ssh/jupiter_codecommit_rsa
+Host kio_pork_colombia_codecommit_rsa
+   HostName git-codecommit.us-east-1.amazonaws.com
+   User APKAWRFQ6YUH42AMMZXB
+   IdentityFile ~/.ssh/kio_pork_colombia_codecommit_rsa
 
 ```
 
-https://xiaolishen.medium.com/use-multiple-ssh-keys-for-different-github-accounts-on-the-same-computer-7d7103ca8693
+<!-- https://xiaolishen.medium.com/use-multiple-ssh-keys-for-different-github-accounts-on-the-same-computer-7d7103ca8693 -->
 
 ```sh
 # git remote -v
 # git remote rm origin
-git remote add origin ssh://jupiter/v1/repos/kio-jup-places-reserve-rjs-app
+git remote add origin ssh://kio_pork_colombia_codecommit_rsa/v1/repos/kio-sl-video-history-board-rjs-app
 git push --set-upstream origin master
 git push
-```
-
-
-
-# Install libraries
-```sh
-# npm install react-bootstrap bootstrap
-# npm i react-external-link
-# npm i react-router-dom
-npm i aws-amplify @aws-amplify/ui-react
-npm i aws-amplify-react
-# npm i --save react-select
-# npm i styled-components
-# npm i uuid
 ```
 
 
@@ -311,7 +298,8 @@ Amplify hosting urls:
 ┌──────────────┬──────────────────────────────────────────────┐
 │ FrontEnd Env │ Domain                                       │
 ├──────────────┼──────────────────────────────────────────────┤
-│ master       │ https://master.d12mq8x0d6vvbw.amplifyapp.com │
+│ master       │ https://master.d2rba890rx31oh.amplifyapp.com │
+└──────────────┴──────────────────────────────────────────────┘
 ```
 
 # Amplify auth
