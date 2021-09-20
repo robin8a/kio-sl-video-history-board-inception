@@ -305,7 +305,7 @@ Amplify hosting urls:
 # Amplify auth
 
 ```sh
-amplify add auth
+ amplify add auth
 # Using service: Cognito, provided by: awscloudformation
  
 #  The current configured provider is Amazon Cognito. 
@@ -314,11 +314,14 @@ amplify add auth
 #  Warning: you will not be able to edit these selections. 
 #  How do you want users to be able to sign in? Username
 #  Do you want to configure advanced settings? No, I am done.
-# Successfully added resource kiojupplacesreserver83258164 locally
+# Successfully added resource kioslvideohistoryboaebd45a6f locally
 
 # Some next steps:
 # "amplify push" will build all your local backend resources and provision it in the cloud
 # "amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+# amplify push
+# ✔ Successfully pulled backend environment kiopcvhbev from the cloud.
 ```
 
 # Amplify push
@@ -349,36 +352,21 @@ amplify add api
 # amplify storage
 ```sh
 amplify add storage
-# Scanning for plugins...
-# Plugin scan successful
-# ? Please select from one of the below mentioned services: Content (Images, audio, vide
-# o, etc.)
-# ? Please provide a friendly name for your resource that will be used to label this cat
-# egory in the project: s3bf54301f
-# ? Please provide bucket name: kio-smart-contracts-ipfs
+# ? Please select from one of the below mentioned services: Content (Images, audio, video, etc.)
+# ? Please provide a friendly name for your resource that will be used to label this category in the project: s32d231932
+# ? Please provide bucket name: kioslvideohistoryboa7f757aaf029b451aab9ce97b95c
 # ? Who should have access: Auth and guest users
 # ? What kind of access do you want for Authenticated users? create/update, read
-# ? What kind of access do you want for Guest users? create/update, read
-# ? Do you want to add a Lambda Trigger for your S3 Bucket? Yes
-# ? Select from the following options 
-# ❯ Choose an existing function from the project 
-#   Create a new function 
-# ➜  kio-smart-contract-rjs-app git:(development) amplify add storage
-# ? Please select from one of the below mentioned services: Content (Images, audio, vide
-# o, etc.)
-# ? Please provide a friendly name for your resource that will be used to label this cat
-# egory in the project: s307b7a237
-# ? Please provide bucket name: kio-smart-contracts-ipfs
-# ? Who should have access: Auth and guest users
-# ? What kind of access do you want for Authenticated users? create/update, read
-# ? What kind of access do you want for Guest users? create/update, read
+# ? What kind of access do you want for Guest users? read
 # ? Do you want to add a Lambda Trigger for your S3 Bucket? No
 # Successfully updated auth resource locally.
-# Successfully added resource s307b7a237 locally
+# Successfully added resource s32d231932 locally
 
 # Some next steps:
 # "amplify push" builds all of your local backend resources and provisions them in the cloud
 # "amplify publish" builds all of your local backend and front-end resources (if you added hosting category) and provisions them in the cloud
+
+kioslvideohistoryboard
 ```
 
 
