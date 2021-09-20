@@ -609,3 +609,12 @@ GraphQL endpoint: https://oq2wwe5hgjegzltql7ol77uzxq.appsync-api.us-east-1.amazo
 GraphQL API KEY: da2-5golr3ets5cglf4qk6x5m6uini
 
 ```
+
+
+1. Landing para dar inicio
+2. Carga video de bienvenida
+3. Cortes
+4. Carga video
+5. Amazonas y C/marca
+6. Sal o Azucar
+7. Regresar los cortes
